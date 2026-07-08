@@ -19,3 +19,5 @@ var f = []; // reference
 var g = {}; // reference
 
 var t = () => {}; // reference
+
+//types of primitive are number string boolean
