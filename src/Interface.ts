@@ -117,3 +117,170 @@ const dog: Dog = {
 };
 
 console.log(dog);
+
+
+// ======================================================
+// TYPE ALIAS
+// ======================================================
+
+type UserType = {
+    name: string;
+    age: number;
+};
+
+const user2: UserType = {
+    name: "Rohan",
+    age: 22
+};
+
+console.log(user2);
+
+
+// ======================================================
+// TYPE ALIAS WITH UNION TYPES
+// ======================================================
+
+type Status = "Pending" | "Success" | "Failed";
+
+let payment: Status = "Success";
+
+console.log(payment);
+
+
+// ======================================================
+// TYPE ALIAS FOR PRIMITIVES
+// ======================================================
+
+type ID = number;
+
+let userId: ID = 101;
+
+console.log(userId);
+
+
+// ======================================================
+// TYPE ALIAS WITH INTERSECTION (&)
+// ======================================================
+
+type Address = {
+    city: string;
+};
+
+type Customer = {
+    name: string;
+};
+
+type CustomerDetails = Customer & Address;
+
+const customer: CustomerDetails = {
+    name: "Brij",
+    city: "Delhi"
+};
+
+console.log(customer);
+
+
+// ======================================================
+// INTERFACE MERGING
+// ======================================================
+
+interface Car {
+    brand: string;
+}
+
+interface Car {
+    model: string;
+}
+
+const car: Car = {
+    brand: "Toyota",
+    model: "Fortuner"
+};
+
+console.log(car);
+
+
+// ======================================================
+// SUMMARY
+// ======================================================
+
+/*
+
+INTERFACE
+---------
+Used mainly for object shapes.
+
+interface User {
+    name: string;
+    age: number;
+}
+
+Features
+--------
+✔ Objects
+✔ Functions
+✔ Classes
+✔ Extends
+✔ Declaration Merging
+
+----------------------------------------
+
+TYPE ALIAS
+----------
+
+type User = {
+    name: string;
+    age: number;
+};
+
+Features
+--------
+✔ Objects
+✔ Primitive Types
+✔ Union Types
+✔ Intersection Types
+✔ Tuples
+✔ Function Types
+
+----------------------------------------
+
+WHEN TO USE WHAT?
+
+Use Interface
+-------------
+✔ Object structures
+✔ API responses
+✔ Class implementations
+✔ Large projects
+
+Use Type
+--------
+✔ Union Types
+✔ Primitive aliases
+✔ Tuples
+✔ Function types
+✔ Intersections
+
+----------------------------------------
+
+INTERFACE vs TYPE
+
+Interface
+---------
+interface User {}
+
+✔ Can extend
+✔ Can merge
+✔ Best for object shapes
+
+Type
+----
+type User = {}
+
+✔ Can create unions
+✔ Can create intersections
+✔ Can alias primitives
+✔ Can alias tuples
+✔ More flexible
+
+*/
