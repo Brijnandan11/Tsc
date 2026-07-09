@@ -97,3 +97,23 @@ const products: Product[] = [
 ];
 
 console.log(products);
+
+
+// ======================================================
+// INTERFACE EXTENDS ANOTHER INTERFACE
+// ======================================================
+
+interface Animal {
+    name: string;
+}
+
+interface Dog extends Animal { // extends ka matlab ye hai ki jo jo animal m property hai vo toh dog ke 
+    breed: string;             //pass hongi hi but aur property jo dog m hai vo bhi hongi 
+}
+
+const dog: Dog = {
+    name: "Tommy",
+    breed: "Labrador"
+};
+
+console.log(dog);
