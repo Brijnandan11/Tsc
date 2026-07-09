@@ -1,23 +1,70 @@
-// Primitive and reference
+// =====================================================
+// PRIMITIVE TYPES
+// =====================================================
 
-// Primitve
-var a = 12; //primitive
+// string
+let name = "Brij";
+console.log(name); // Brij
 
-var b = "Nitesh"; // primitive
+// number
+let age = 20;
+console.log(age); // 20
 
-var c = 23.43; //primitive
+// boolean
+let isStudent = true;
+console.log(isStudent); // true
 
-var d = true; // primitve
+// bigint
+let bigNumber = 12345678901234567890n;
+console.log(bigNumber);
 
-var e = 'a'; //primitve
+// symbol
+let id = Symbol("id");
+console.log(id);
+
+// null
+let data = null;
+console.log(data); // null
+
+// undefined
+let value = undefined;
+console.log(value); // undefined
 
 
-// Reference
+// =====================================================
+// PRIMITIVE VALUES ARE COPIED
+// =====================================================
 
-var f = []; // reference
+let a = 10;
+let b = a; // Copy the value
 
-var g = {}; // reference
+console.log(a); // 10
+console.log(b); // 10
 
-var t = () => {}; // reference
+b = 50;
 
-//types of primitive are :- [ number, string, boolean ]
+console.log(a); // 10
+console.log(b); // 50
+
+// Changing b does NOT change a.
+
+
+// =====================================================
+// REFERENCE TYPE : OBJECT
+// =====================================================
+
+let user1 = {
+    name: "Brij"
+};
+
+let user2 = user1; // Copy the reference
+
+console.log(user1); // { name: "Brij" }
+console.log(user2); // { name: "Brij" }
+
+user2.name = "Rahul";
+
+console.log(user1.name); // Rahul
+console.log(user2.name); // Rahul
+
+// Both variables point to the same object.
