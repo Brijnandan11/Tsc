@@ -13,8 +13,20 @@ There are three access modifiers:
 3. protected
 */
 
+//=======================================
+// Readonly property
+//=======================================
 
 // agr access modifiers ke aange readonly lg jaye toh uska mtlb ye hota hai ki iss propety ko tum only read kr skte ho, usme koi value assign ya update nhi kr skte ho.
+
+//==========================================
+//Optional property
+//=========================================
+
+//Optional ka matlab hai ki ye property dena zaroori nahi hai.
+//Agar value di to TypeScript accept karega.
+//Agar nahi di to bhi koi error nahi aayega.
+
 
 
 // ======================================================
