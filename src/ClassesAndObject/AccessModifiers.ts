@@ -14,6 +14,9 @@ There are three access modifiers:
 */
 
 
+// agr access modifiers ke aange readonly lg jaye toh uska mtlb ye hota hai ki iss propety ko tum only read kr skte ho, usme koi value assign ya update nhi kr skte ho.
+
+
 // ======================================================
 // 1. PUBLIC
 // ======================================================
