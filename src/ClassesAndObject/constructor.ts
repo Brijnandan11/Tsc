@@ -165,10 +165,30 @@ console.log(user1.username);
 console.log(user1.email);
 console.log(user1.isAdmin);
 
+// ======================================================
+// CLASS WITH METHODS
+// ======================================================
+
+class Employee {
+
+    constructor(
+        public name: string,
+        public salary: number
+    ) {}
+
+    showDetails() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Salary: ${this.salary}`);
+    }
+}
+
+const emp1 = new Employee("Brij", 50000);
+
+emp1.showDetails();
 
 // ======================================================
 // WHAT HAPPENS INTERNALLY?
-// ======================================================
+// ======================================================`
 
 /*
 
