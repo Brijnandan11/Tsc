@@ -74,7 +74,7 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+https://github.com/Brijnandan11/Tsc.git
 cd <repo-name>
 npm install
 ```
