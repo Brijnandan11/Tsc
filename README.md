@@ -75,7 +75,7 @@ src/
 
 ```bash
 https://github.com/Brijnandan11/Tsc.git
-cd <repo-name>
+cd Tsc
 npm install
 ```
 
